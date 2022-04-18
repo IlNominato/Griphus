@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="numeriprimitext" style="color: azure"><h2>Numeri primi</h2></label>
+        <textarea readonly class="form-control" id="numeriprimitext" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label style="color: azure"><h2>Seleziona un range</h2></label>
+      <div id ="range" class="btn-group" role="group" aria-label="Basic radio toggle button group"
+           style="margin-top: auto;margin-left: 100px">
+        <input type="radio" class="btn-check" name="btnradio" id="cento" autocomplete="off" (click)="cambiaRange1()">
+        <label class="btn btn-outline-primary" for="cento" style="background-color: white; color: blue">100</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="diecimila" autocomplete="off" (click)="cambiaRange2()">
+        <label class="btn btn-outline-primary" for="diecimila" style="background-color: white; color: blue">10000</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="unmilione" autocomplete="off" (click)="cambiaRange3()">
+        <label class="btn btn-outline-primary" for="unmilione" style="background-color: white; color: blue">1000000</label>
+      </div>
+      <div class="row" style="margin-top: 20px">
+        <!-- HTML !-->
+        <button class="button-18" role="button" (click)="stampaPrimi(0)">Genera numeri primi</button>
+        <button class="button-18" role="button" style="margin-top: 20px" (click)="stampaPrimi(1)">Genera numeri primi gemelli</button>
+
+      </div>
+
+
+    </div>
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="numeriprimiGtext" style="color: azure"><h2>Numeri primi gemelli</h2></label>
+        <textarea readonly class="form-control" id="numeriprimiGtext" rows="10"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+

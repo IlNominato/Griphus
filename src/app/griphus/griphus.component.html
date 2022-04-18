@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="card-body" style="width: 200px">
+      <h5 class="card-title mb-4" style="color: white">Inserisci frase da criptare</h5>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="frasedacriptaretext" style="height: 250px"></textarea>
+        <label for="floatingTextarea2">Scrivi</label>
+      </div>
+    </div>
+    <div class="col-sm"><div class="card-body" style="width: 650px">
+      <h5 class="card-title mb-4" style="color: white">Frase criptata</h5>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="frasecriptatatext" style="height: 250px"></textarea>
+        <label for="floatingTextarea2">Scrivi</label>
+      </div>
+    </div></div>
+  </div>
+  <textarea class="form-control" placeholder="Inserisci il codice di 7 caratteri" id="password" maxlength="7"></textarea>
+  <button class="button-19" role="button" (click)="verificaLunghezzaPECripta()" style="margin-top: 20px" >Cripta la frase</button>
+  <button class="button-19" role="button" (click)="verificaLunghezzaPEDecripta()" style="margin-top: 20px">Decripta la frase</button>
+</div>
+
+
